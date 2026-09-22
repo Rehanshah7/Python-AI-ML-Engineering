@@ -35,7 +35,7 @@ average = sum / len(list_of_int)
 print("Average of all numbers in the list:", average)
 
 
-Input two lists of integers from the user. Merge them into one list and sort the result
+#Input two lists of integers from the user. Merge them into one list and sort the result
 print("\n" + "Input two lists of integers from the user. Merge them into one list and sort the result")
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
@@ -71,7 +71,7 @@ print("Odd numbers:", odd_list)
 # C - Delete a student
 # D - Display all students and marks
 # E - Exit
-print("\n" + "Create a dictionary with keys = student name and values as marks Write a menu-based program where user presses a key (ʼAʼ, ‘Bʼ, ‘Cʼ, ‘Dʼ)"))
+print("\n" + "Create a dictionary with keys = student name and values as marks Write a menu-based program where user presses a key (ʼAʼ, ‘Bʼ, ‘Cʼ, ‘Dʼ)")
 
 dictionary_student_name_marks = {}
 
@@ -117,13 +117,13 @@ for word in words:
 print(dictionary_word_length)
 
 
-Write a program that takes a string from the user and prints the number of spaces in the string.
+# Write a program that takes a string from the user and prints the number of spaces in the string.
 print("\n" + "Write a program that takes a string from the user and prints the number of spaces in the string.")
 
-string = input("Enter a string: ")
+string_b = input("Enter a string: ")
 spaces = 0
 
-for i in string:
+for i in string_b:
     if i == " ":
         spaces += 1
 
@@ -133,8 +133,8 @@ print("Number of spaces in the string:", spaces)
 # Write a program to check whether two lists share no common elements.
 print("\n" + "Write a program to check whether two lists share no common elements.")
 
-list1 = [1, 2, 3, 4, 5]
-list2 = [6, 7, 8, 9, 10]
+list1_b = [1, 2, 3, 4, 5]
+list2_b = [6, 7, 8, 9, 10]
 
 set1 = set(list1)
 set2 = set(list2)
@@ -148,10 +148,24 @@ else:
 # Given a list, print all elements that appear more than once in the list.
 print("\n" + "Given a list, print all elements that appear more than once in the list.")
 
-list1 = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3]
+list1_c = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3]
 
-set1 = set(list1)
+set1_c = set(list1)
 
 for i in set1:
     if list1.count(i) > 1:
         print(i, "appears more than once in the list.")
+
+
+# Ask the user for a string and print: 
+# All Unique Characters
+# The Count of Unique Charaters
+print("\n" + "Ask the user for a string and print: All Unique Characters, The Count of Unique Charaters")
+user_input_string = input("Enter a string: ")
+unique_char = set(user_input_string)
+print("Total number of unique characters is:", len(unique_char))
+
+for i in unique_char:
+    print("Unique character:", i)
+    frequency = user_input_string.count(i)
+    print("Frequency of", i, "is:", frequency)
